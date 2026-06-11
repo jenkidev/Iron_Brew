@@ -1,0 +1,267 @@
+body{
+    background-color: black;
+    color:azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display:flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px dashed white;
+}
+
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 25%;
+}
+
+.brand-name{
+    color: goldenrod;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.topnav {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.topnav a{
+  color: goldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  margin: auto 1px;
+  text-decoration: none;
+}
+
+.topnav a:hover{
+    color:black;
+    background-color: goldenrod;    
+}
+
+.topnav a.active{
+    color: black;
+    background-color: goldenrod;
+    border-style: double;
+    border-color: dimgrey;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(50, 50, 50, 1.0), rgba(50, 50, 50, 0)),  
+    url("../images/tim-raderschad-IKvl3PLi8pQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    
+}
+
+.splash p{
+    margin-top: 5px;
+    max-height: 100%;
+
+}
+
+.splash-header{
+  justify-content: center;
+}
+
+/*---Photo card start ---*/
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-card {
+    background-color: black; 
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    width: 20%;
+    padding: 1rem;
+    text-align: center;
+    color: azure;
+    box-shadow: 0 0 15px rgba(218,165,32,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 1rem;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(218,165,32,0.6);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid goldenrod;
+}
+
+.photo-card h3 {
+    color: goldenrod;
+    margin-top: 0.8rem;
+    font-family: Georgia, serif;
+}
+
+.photo-card p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+
+/*---Photo card end ---*/
+
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: goldenrod;
+    background-color: black;
+    font-weight: bold;
+}
+
+.hours{
+    justify-content: center;
+}
+
+.hours-list{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.socials i{
+    font-size: 2rem;
+    margin: 1rem;
+    color: goldenrod;
+}
+
+/*-----Media Queries for responsive design------*/
+
+/* Large screens (desktops ≥1200px) */
+@media screen and (min-width: 1200px) {
+  .brand-name {
+    font-size: 3rem;
+  }
+  .topnav a {
+    padding: 16px 20px;
+  }
+}
+
+/* Medium screens (tablets 768px-1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .brand-name {
+    font-size: 2.5rem;
+  }
+
+  .topnav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .splash p {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small screens (phones ≤767px) */
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .topnav li{
+    width: 100%;
+  }
+
+  .topnav ul {
+    padding: 0px;
+  }
+
+  .splash {
+    min-height: 250px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .splash p {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hours-list li {
+    font-size: 1rem;
+  }
+
+  .socials {
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .photo-card {
+        width: 90%;
+  }
+
+  .photo-card p{
+        font-size: 1rem;
+  }
+}
