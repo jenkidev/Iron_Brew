@@ -71,7 +71,12 @@ header {
 }
 
 .splash-header{
-  justify-content: center;
+  color: goldenrod;
+  background-color: black;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /*---Photo card start ---*/
@@ -83,6 +88,8 @@ header {
 }
 
 .photo-card {
+    display: block;
+    text-decoration: none;
     background-color: black; 
     border: 2px solid goldenrod;
     border-radius: 10px;
@@ -102,7 +109,7 @@ header {
 
 .photo-card img {
     width: 100%;
-    height: auto;
+    height: 50%;
     border-radius: 8px;
     border: 2px solid goldenrod;
 }
@@ -120,6 +127,40 @@ header {
 
 
 /*---Photo card end ---*/
+
+/*---Menu Start ---*/
+
+.menu{
+  background-color: black;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 5px double;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.splash-header{
+  color: goldenrod;
+  background-color: black;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+table td {
+  width: 33%;
+  border-bottom: 2px white dotted;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/*---Menu End ---*/
 
 footer {
     margin-top: auto;
@@ -258,7 +299,11 @@ footer {
   }
 
   .photo-card {
-        width: 90%;
+    width: 90%;
+  }
+
+  .photo-card img {
+    height: 70%;
   }
 
   .photo-card p{
