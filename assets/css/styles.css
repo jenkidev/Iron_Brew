@@ -189,6 +189,7 @@ form button{
 }
 /*--- Form End ---*/
 
+/* --- Footer Start---*/
 footer {
     margin-top: auto;
     display: flex;
@@ -220,6 +221,8 @@ footer {
     margin: 1rem;
     color: goldenrod;
 }
+
+/* --- Footer End---*/
 
 /*-----Media Queries for responsive design------*/
 
@@ -332,6 +335,7 @@ footer {
 
   .photo-card {
     width: 90%;
+    height: 100%;
   }
 
   .photo-card img {
