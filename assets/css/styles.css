@@ -19,7 +19,7 @@ header {
 }
 
 .brand-name{
-    color: goldenrod;
+    color: #ecc766;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
 }
@@ -36,7 +36,7 @@ header {
 }
 
 .topnav a{
-  color: goldenrod;
+  color: #ecc766;
   text-align: center;
   padding: 14px 16px;
   margin: auto 1px;
@@ -45,12 +45,12 @@ header {
 
 .topnav a:hover{
     color:black;
-    background-color: goldenrod;    
+    background-color: #ecc766;    
 }
 
 .topnav a.active{
     color: black;
-    background-color: goldenrod;
+    background-color: #ecc766;
     border-style: double;
     border-color: dimgrey;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 .splash-header{
-  color: goldenrod;
+  color: #ecc766;
   background-color: black;
   margin-top: 1rem;
   padding: 1rem 1rem;
@@ -96,7 +96,7 @@ header {
     display: block;
     text-decoration: none;
     background-color: black; 
-    border: 2px solid goldenrod;
+    border: 2px solid #ecc766;
     border-radius: 10px;
     width: 20%;
     padding: 1rem;
@@ -115,11 +115,11 @@ header {
     width: 100%;
     height: 50%;
     border-radius: 8px;
-    border: 2px solid goldenrod;
+    border: 2px solid #ecc766;
 }
 
 .photo-card h2 {
-    color: goldenrod;
+    color: #ecc766;
     margin-top: 0.8rem;
     font-family: Georgia, serif;
     font-size: 1.5rem;
@@ -150,7 +150,7 @@ table {
 }
 
 .splash-header{
-  color: goldenrod;
+  color: #ecc766;
   background-color: black;
   margin-top: 1rem;
   padding: 1rem 1rem;
@@ -181,7 +181,7 @@ form textarea{
 
 form button{
   padding: 0.5rem 1rem;
-  background:goldenrod;
+  background:#ecc766;
   border:none;
   border-radius:5px; 
   font-weight:bold;
@@ -194,7 +194,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: goldenrod;
+    color: #ecc766;
     background-color: black;
     font-weight: bold;
 }
@@ -218,7 +218,7 @@ footer {
 .socials i{
     font-size: 2rem;
     margin: 1rem;
-    color: goldenrod;
+    color: #ecc766;
 }
 
 /* --- Footer End---*/
